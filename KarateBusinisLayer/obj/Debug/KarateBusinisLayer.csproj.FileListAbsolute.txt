@@ -1,0 +1,7 @@
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\obj\Debug\KarateBusinisLayer.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\bin\Debug\KarateBusinisLayer.dll
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\bin\Debug\KarateBusinisLayer.pdb
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\bin\Debug\KarateDataAccessLayer.dll
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\bin\Debug\KarateDataAccessLayer.pdb
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\obj\Debug\KarateBusinisLayer.dll
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateBusinisLayer\obj\Debug\KarateBusinisLayer.pdb

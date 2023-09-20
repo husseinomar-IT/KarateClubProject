@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F00395B6-DAB3-449F-8047-0D8B436BAE9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KarateWindowsFormsApplication</RootNamespace>
+    <AssemblyName>KarateWindowsFormsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\WindowsPackage\packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormsMembes\FrmAddMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMembes\FrmAddMembers.Designer.cs">
+      <DependentUpon>FrmAddMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmAddInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmAddInstructor.Designer.cs">
+      <DependentUpon>FrmAddInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMembes\FrmDelMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMembes\FrmDelMember.Designer.cs">
+      <DependentUpon>FrmDelMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmInstructor.Designer.cs">
+      <DependentUpon>FrmInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmInstructorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmInstructorList.Designer.cs">
+      <DependentUpon>FrmInstructorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmEditInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmEditInstructor.Designer.cs">
+      <DependentUpon>FrmEditInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmDelInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsInstructors\FrmDelInstructor.Designer.cs">
+      <DependentUpon>FrmDelInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUser\FrmAddUsercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUser\FrmAddUsercs.Designer.cs">
+      <DependentUpon>FrmAddUsercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmAddME_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmAddME_IN.Designer.cs">
+      <DependentUpon>FrmAddME_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmBeltRanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmBeltRanks.Designer.cs">
+      <DependentUpon>FrmBeltRanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmBeltList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmBeltList.Designer.cs">
+      <DependentUpon>FrmBeltList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmAddBeltTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmAddBeltTest.Designer.cs">
+      <DependentUpon>FrmAddBeltTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmBeltTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmBeltTest.Designer.cs">
+      <DependentUpon>FrmBeltTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmBeltTestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmBeltTestList.Designer.cs">
+      <DependentUpon>FrmBeltTestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmEditBeltTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmEditBeltTest.Designer.cs">
+      <DependentUpon>FrmEditBeltTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmDeleteBeltTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltTest\FrmDeleteBeltTest.Designer.cs">
+      <DependentUpon>FrmDeleteBeltTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaymentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaymentList.Designer.cs">
+      <DependentUpon>FrmPaymentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription Period\FrmDeletePeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription Period\FrmDeletePeriod.Designer.cs">
+      <DependentUpon>FrmDeletePeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription Period\FrmEditPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription Period\FrmEditPeriod.Designer.cs">
+      <DependentUpon>FrmEditPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription Period\FrmSubPeriodList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription Period\FrmSubPeriodList.Designer.cs">
+      <DependentUpon>FrmSubPeriodList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription Period\FrmAddPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription Period\FrmAddPeriod.Designer.cs">
+      <DependentUpon>FrmAddPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboardcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboardcs.Designer.cs">
+      <DependentUpon>FrmDashboardcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUser\FrmDelUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUser\FrmDelUser.Designer.cs">
+      <DependentUpon>FrmDelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUser\FrmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUser\FrmEditUser.Designer.cs">
+      <DependentUpon>FrmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmDelME_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmDelME_IN.Designer.cs">
+      <DependentUpon>FrmDelME_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmEditME_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmEditME_IN.Designer.cs">
+      <DependentUpon>FrmEditME_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmEditBeltcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsBeltRanks\FrmEditBeltcs.Designer.cs">
+      <DependentUpon>FrmEditBeltcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmMembers_Instructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmMembers_Instructors.Designer.cs">
+      <DependentUpon>FrmMembers_Instructors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmMembersInstructorsListcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Members_Instructors\FrmMembersInstructorsListcs.Designer.cs">
+      <DependentUpon>FrmMembersInstructorsListcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScreen.Designer.cs">
+      <DependentUpon>FrmScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMembes\FrmMemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMembes\FrmMemberList.Designer.cs">
+      <DependentUpon>FrmMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMembes\FrmMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMembes\FrmMembers.Designer.cs">
+      <DependentUpon>FrmMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMembes\FrmEditMemebr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMembes\FrmEditMemebr.Designer.cs">
+      <DependentUpon>FrmEditMemebr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsUser\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsUser\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription Period\FrmSubPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscription Period\FrmSubPeriod.Designer.cs">
+      <DependentUpon>FrmSubPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms Members_Instructors\FrmDelME_IN.resx">
+      <DependentUpon>FrmDelME_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Members_Instructors\FrmEditME_IN.resx">
+      <DependentUpon>FrmEditME_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Members_Instructors\FrmMembersInstructorsListcs.resx">
+      <DependentUpon>FrmMembersInstructorsListcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Members_Instructors\FrmMembers_Instructors.resx">
+      <DependentUpon>FrmMembers_Instructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltRanks\FrmBeltList.resx">
+      <DependentUpon>FrmBeltList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltRanks\FrmBeltRanks.resx">
+      <DependentUpon>FrmBeltRanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltRanks\FrmEditBeltcs.resx">
+      <DependentUpon>FrmEditBeltcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltTest\FrmAddBeltTest.resx">
+      <DependentUpon>FrmAddBeltTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltTest\FrmBeltTestList.resx">
+      <DependentUpon>FrmBeltTestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltTest\FrmDeleteBeltTest.resx">
+      <DependentUpon>FrmDeleteBeltTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInstructors\FrmAddInstructor.resx">
+      <DependentUpon>FrmAddInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInstructors\FrmDelInstructor.resx">
+      <DependentUpon>FrmDelInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInstructors\FrmEditInstructor.resx">
+      <DependentUpon>FrmEditInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInstructors\FrmInstructorList.resx">
+      <DependentUpon>FrmInstructorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsInstructors\FrmInstructor.resx">
+      <DependentUpon>FrmInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUser\FrmAddUsercs.resx">
+      <DependentUpon>FrmAddUsercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUser\FrmDelUser.resx">
+      <DependentUpon>FrmDelUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUser\FrmEditUser.resx">
+      <DependentUpon>FrmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsUser\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Members_Instructors\FrmAddME_IN.resx">
+      <DependentUpon>FrmAddME_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltTest\FrmBeltTest.resx">
+      <DependentUpon>FrmBeltTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboardcs.resx">
+      <DependentUpon>FrmDashboardcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsBeltTest\FrmEditBeltTest.resx">
+      <DependentUpon>FrmEditBeltTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaymentList.resx">
+      <DependentUpon>FrmPaymentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScreen.resx">
+      <DependentUpon>FrmScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMembes\FrmAddMembers.resx">
+      <DependentUpon>FrmAddMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMembes\FrmDelMember.resx">
+      <DependentUpon>FrmDelMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMembes\FrmMemberList.resx">
+      <DependentUpon>FrmMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMembes\FrmMembers.resx">
+      <DependentUpon>FrmMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMembes\FrmEditMemebr.resx">
+      <DependentUpon>FrmEditMemebr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription Period\FrmAddPeriod.resx">
+      <DependentUpon>FrmAddPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription Period\FrmDeletePeriod.resx">
+      <DependentUpon>FrmDeletePeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription Period\FrmEditPeriod.resx">
+      <DependentUpon>FrmEditPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription Period\FrmSubPeriod.resx">
+      <DependentUpon>FrmSubPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription Period\FrmSubPeriodList.resx">
+      <DependentUpon>FrmSubPeriodList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KarateBusinisLayer\KarateBusinisLayer.csproj">
+      <Project>{991c1bbd-0da9-4445-82f8-37c2acbbef51}</Project>
+      <Name>KarateBusinisLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_355720743_3GQv9QBh9uyBVGO25npy9iYODrTBa3wU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_people_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_people_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_dashboard_layout_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_meditation_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_quarterly_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_login_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_fight_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_action_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_action_24px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_personal_trainer_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_coach_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_kimono_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_kimono_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_kimono_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_leadership_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_circled_x_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_group_woman_man_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_registration_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_denied_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_people_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checked_user_male_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checked_user_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_find_user_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_trash_can_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_48px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_users_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_timeline_week_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_test_passed_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bribery_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_boxing_glove_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_admin_settings_male_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc0b7595afa0fbe58484a3b233653dba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_16px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_24px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_day_and_night_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_calendar_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_calendar_plus_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_calendar_minus_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_calendar_delete_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view_schedule_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_scorecard_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_test_passed_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_survey_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_list_view_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_medal_first_place_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KarateLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64d288b0cdcfcd90b697dfd4e55cc05d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

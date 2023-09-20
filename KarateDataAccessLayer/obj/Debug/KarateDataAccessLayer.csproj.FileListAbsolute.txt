@@ -1,0 +1,5 @@
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateDataAccessLayer\bin\Debug\KarateDataAccessLayer.dll
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateDataAccessLayer\bin\Debug\KarateDataAccessLayer.pdb
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateDataAccessLayer\obj\Debug\KarateDataAccessLayer.dll
+c:\users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateDataAccessLayer\obj\Debug\KarateDataAccessLayer.pdb
+C:\Users\hp\documents\visual studio 2013\Projects\KarateWindowsFormsApplication\KarateDataAccessLayer\obj\Debug\KarateDataAccessLayer.csprojResolveAssemblyReference.cache
